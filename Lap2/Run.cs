@@ -6,7 +6,13 @@ namespace ConsoleApp1.Lap2
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("hello");
+            
+            Fashion f = new Fashion();
+            f.getInfo();
+            f.Noti();
+            f.Check();
+            Diamon d = new Diamon();
+            d.Check();
         }
     }
 }

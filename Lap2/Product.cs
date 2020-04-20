@@ -3,16 +3,26 @@ using System.Collections.Generic;
 
 namespace ConsoleApp1.Lap2
 {
-    public class Product
+    public abstract class Product
     {
-        public int id;
-        public int name;
-        public int price;
-        public int qty;
+        protected int id ;
+        protected string name = "book";
+        protected int price = 50000;
+        protected int qty = 10;
 
-       
+        public virtual void getInfo()
+        {
+            Console.WriteLine("ID"+id," Name"+name," Price"+price," QTY"+qty);
+        }
 
-        public void Noti()
+        public abstract void Noti();
+
+        public void Add()
+        {
+            
+        }
+
+        public void Remove()
         {
             
         }
